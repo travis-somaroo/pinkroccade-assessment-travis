@@ -1,0 +1,11 @@
+version: '3'
+services:
+  postgres:
+    image: 'postgres:latest'
+    container_name: 'pinkroccade'
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=sa
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=pinkroccade_db
